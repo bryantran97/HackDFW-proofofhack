@@ -1,6 +1,9 @@
 /* ================= */
 /*       GLOBALS     */
 /* ================= */
+* {
+    text-align: center;
+}
 body {
     height: 100%;
     background-color: #272833;
@@ -10,7 +13,6 @@ body {
 
 ul {
     padding: 0;
-    text-align: center;
 }
 
 li {
@@ -29,18 +31,13 @@ li {
 }
 
 .image-wrapper {
-    text-align: center;
     margin: 150px auto 0 auto;
 }
 
 .title-text-wrapper{
     margin-top: 30px;
-    text-align: center;
 }
 
-.title-text-wrapper h1 {
-    font-size: 50px;
-}
 
 .title-text-wrapper h2 {
     margin-top: 25px;
@@ -48,7 +45,6 @@ li {
 }
 
 .button-wrapper {
-    text-align: center;
     margin: 50px auto 75px auto;
 }
 .register-button {
@@ -58,8 +54,13 @@ li {
     color: white;
     background-color: transparent;
     border: 2px solid white;
+    transition: 0.2s all ease;
 }
 
+.register-button:hover {
+    background-color: #ffdd17;
+    color: #272833;
+}
 /* ================= */
 /*        INFO       */
 /* ================= */
@@ -70,6 +71,21 @@ li {
     padding: 50px;
 }
 
+.mini-text-info {
+    padding: 5%;
+}
 .mini-text-info li {
     margin-bottom: 50px;
+}
+
+.mini-info-box {
+    padding: 30px;
+    background-color: #272833;
+    color: white;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+mini-text-info {
+    
 }
