@@ -2,13 +2,24 @@
 /*       GLOBALS     */
 /* ================= */
 body {
-    width: 100%;
     height: 100%;
     background-color: #272833;
     /** TAKE OUT LATER **/
     color: white;
 }
 
+ul {
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.container-fluid{
+    padding: 0;
+}
 /* ================= */
 /*        TITLE      */
 /* ================= */
@@ -22,26 +33,43 @@ body {
     margin: 150px auto 0 auto;
 }
 
-.title-text {
-    margin-top: 40px;
+.title-text-wrapper{
+    margin-top: 30px;
     text-align: center;
 }
 
-.title-text h1 {
-    font-size: 65px;
+.title-text-wrapper h1 {
+    font-size: 50px;
 }
 
-.title-text h2 {
+.title-text-wrapper h2 {
     margin-top: 25px;
     font-size: 25px;
 }
 
 .button-wrapper {
     text-align: center;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 75px auto;
 }
 .register-button {
     width: 250px;
     height: 55px;
     border-radius: 50px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+/* ================= */
+/*        INFO       */
+/* ================= */
+#info {
+    width: 100%;
+    background-color: #d6d6d6;
+    color: black;
+    padding: 50px;
+}
+
+.mini-text-info li {
+    margin-bottom: 50px;
 }
