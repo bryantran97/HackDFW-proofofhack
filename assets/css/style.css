@@ -211,20 +211,39 @@ a.involvement-button.medium-p {
 }
 
 .footer-wrapper {
-    padding: 75px 0;
+    padding: 50px 0 75px 0;
 }
 
-.footer-wrapper a::before {
-    font-size: 35px;
-    color: transparent;
-   -webkit-text-stroke-width: .9px;
-   -webkit-text-stroke-color: #e8e8e8;
+.fa-icons {
+    padding-top: 75px;
 }
-.fa.fa-twitter, {
+
+.fa-icons ul{
+    padding: 0;
+}
+
+.fa-icons li {
+    display: inline;
+    padding: 0 10px 35px 10px;
+}
+
+.fa-icons img {
+    max-width: 40%;
+    height: auto;
+    width: auto;
+    padding-bottom: 35px;
+}
+
+.fa.fa-twitter,
+.fa.fa-facebook,
+.fa.fa-linkedin,
+.fa.fa-camera-retro,
+.fa.fa-envelope{
     font-size: 35px;
     color: transparent;
    -webkit-text-stroke-width: .9px;
    -webkit-text-stroke-color: #e8e8e8;
+    text-decoration: none;
 }
 
 #footer li h2,
@@ -244,25 +263,41 @@ a.involvement-button.medium-p {
 }
 
 #footer .row {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.footer-wrapper li a {
+    color: #e8e8e8;
 }
 
 .vertical-line {
     margin: 0 0 auto 0;
     border-left: 1px solid #4f4f4f;
-    height: 100px;
+    height: 130px;
+}
+
+.wow {
+    visibility: hidden;
 }
 /* ================= */
 /*      MQUERIES     */
 /* ================= */
 
-@media (max-width: 876px) {
+@media only screen and (max-width: 768px) {
     .pull-right,
     .pull-left {
         text-align: center;
     }
-    
     .vertical-line {
         display: none;
+    }
+    
+    #footer li h2,
+    #footer li p {
+        text-align: center;
+    }
+    
+    .footer-wrapper h2 {
+        padding-top: 35px;
     }
 }
