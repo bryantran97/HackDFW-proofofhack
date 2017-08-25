@@ -1,91 +1,219 @@
 /* ================= */
 /*       GLOBALS     */
 /* ================= */
+
 * {
     text-align: center;
+    font-family: 'Archivo';
 }
 body {
     height: 100%;
-    background-color: #272833;
     /** TAKE OUT LATER **/
+    
     color: white;
 }
-
 ul {
     padding: 0;
 }
-
 li {
     list-style: none;
 }
-
-.container-fluid{
+.container-fluid {
     padding: 0;
+}
+#landing-image-div {
+    overflow: hidden;
+}
+#landing-image {
+    background-image: url(../images/landing.jpg);
+    background-position: 50% 60%;
+    position: fixed;
+    transform: scale(1.03);
+    filter: blur(4px);
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+span {
+    color: #edc255;
 }
 /* ================= */
 /*        TITLE      */
 /* ================= */
+
+#title {
+    color: white;
+}
 .title-logo {
-    width: 250px;
-    height: 60px;
+    height: 200px;
+    width: 200px;
 }
-
 .image-wrapper {
-    margin: 150px auto 0 auto;
+    padding-top: 75px;
 }
-
-.title-text-wrapper{
-    margin-top: 30px;
+#title h1 {
+    font-weight: 700;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
 }
-
-
-.title-text-wrapper h2 {
-    margin-top: 25px;
-    font-size: 25px;
-}
-
 .button-wrapper {
-    margin: 50px auto 75px auto;
+    margin: 50px auto 100px auto;
 }
 .register-button {
-    width: 250px;
+    font-weight: 700;
+    text-transform: uppercase;
     height: 55px;
+    padding: 10px 50px;
     border-radius: 50px;
-    color: white;
-    background-color: transparent;
+    background-color: #ffdd17;
     border: 2px solid white;
     transition: 0.2s all ease;
+    cursor: pointer;
+    outline: none;
 }
-
-.register-button:hover {
-    background-color: #ffdd17;
+.register-button a:hover {
+    background-color: transparent;
+    color: white;
+}
+.button-wrapper a {
     color: #272833;
+}
+.button-wrapper a:hover {
+    text-decoration: none;
+    color: white;
 }
 /* ================= */
 /*        INFO       */
 /* ================= */
+
 #info {
     width: 100%;
-    background-color: #d6d6d6;
+    background-color: #e8e8e8;
     color: black;
     padding: 50px;
 }
-
 .mini-text-info {
-    padding: 5%;
+    padding: 5% 0;
 }
 .mini-text-info li {
     margin-bottom: 50px;
 }
+.mini-text-info li h2 {
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+/* Info box */
 
 .mini-info-box {
-    padding: 30px;
-    background-color: #272833;
-    color: white;
-    border-radius: 20px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+    box-shadow: 1px 1px 2px #e0e0e0;
+    color: black;
+    border-radius: 4px;
     margin-top: 50px;
 }
+/* ================= */
+/*        F A Q      */
+/* ================= */
 
-mini-text-info {
-    
+#faqs {
+    background-color: #272833;
+}
+#faqs .faq-text {
+    padding-top: 75px;
+}
+.faq-text h1 {
+    font-weight: 700;
+}
+.faq-box {
+    padding-bottom: 40px;
+}
+.faq-box-wrapper {
+    padding-bottom: 75px;
+}
+/* ================= */
+/*      SCHEDULE     */
+/* ================= */
+
+#schedule h1 {
+    padding-top: 75px;
+    font-weight: 700;
+}
+#schedule h2 {
+    padding-top: 30px;
+}
+.event-schedule {
+    margin-bottom: 175px;
+}
+.event-schedule h2 {
+    padding-bottom: 30px;
+    font-weight: 700;
+}
+.pull-right {
+    text-align: right;
+}
+.pull-left {
+    text-align: left;
+}
+/* ================= */
+/*      SPONSORS     */
+/* ================= */
+
+#sponsors {
+    color: black;
+    background-color: #e8e8e8;
+}
+.sponsors-wrapper h1 {
+    padding-top: 75px;
+    font-weight: 700;
+}
+.involvement h1 {
+    font-weight: 700;
+}
+.involvement-button-wrapper {
+    margin: 40px 0 75px 0;
+}
+.involvement-button {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    height: 55px;
+    border-radius: 50px;
+    color: white;
+    background-color: #272833;
+    border: 2px solid white;
+    transition: 0.2s all ease;
+    cursor: pointer;
+}
+a.involvement-button.medium-p {
+    color: white;
+}
+.involvement-button:hover {
+    background-color: #edc255;
+}
+.all-involvement-buttons {
+    padding-bottom: 75px;
+}
+.all-involvement-buttons a:hover {
+    text-decoration: none;
+}
+/* ================= */
+/*       FOOTER      */
+/* ================= */
+
+#footer {
+    background-color: #272833;
+}
+/* ================= */
+/*      MQUERIES     */
+/* ================= */
+
+@media (max-width: 844px) {
+    .pull-right,
+    .pull-left {
+        text-align: center;
+    }
 }
