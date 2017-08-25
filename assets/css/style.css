@@ -61,18 +61,6 @@ span {
 .button-wrapper {
     margin: 50px auto 100px auto;
 }
-.register-button {
-    font-weight: 700;
-    text-transform: uppercase;
-    height: 55px;
-    padding: 10px 50px;
-    border-radius: 50px;
-    background-color: #ffdd17;
-    border: 2px solid white;
-    transition: 0.2s all ease;
-    cursor: pointer;
-    outline: none;
-}
 .register-button a:hover {
     background-color: transparent;
     color: white;
@@ -93,6 +81,9 @@ span {
     background-color: #e8e8e8;
     color: black;
     padding: 50px;
+}
+.mini-info {
+    padding-bottom: 75px;
 }
 .mini-text-info {
     padding: 5% 0;
@@ -207,6 +198,27 @@ a.involvement-button.medium-p {
 #footer {
     background-color: #272833;
 }
+
+#footer li h2,
+#footer li p {
+    text-align: left;
+}
+
+#footer li h2 {
+    font-weight: 700;
+    padding-top: 50px;
+    margin-bottom: -5px;
+}
+
+#footer li p {
+    margin: 0;
+}
+
+#footer .row {
+    padding-bottom: 50px;
+}
+
+# f
 /* ================= */
 /*      MQUERIES     */
 /* ================= */
