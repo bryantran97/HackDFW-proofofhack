@@ -98,7 +98,7 @@ span {
 /* Info box */
 
 .mini-info-box {
-    padding: 15px;
+    padding: 50px;
     background-color: white;
     border: 1px solid #c9c9c9;
     box-shadow: 1px 1px 2px #e0e0e0;
@@ -161,8 +161,19 @@ span {
     padding-top: 75px;
     font-weight: 700;
 }
-.involvement h1 {
+
+/* ================= */
+/*     INVOLVEMENT   */
+/* ================= */
+#involvement {
+    background-color: #e8e8e8;
+    color: black;
+}
+#involvement h1 {
     font-weight: 700;
+}
+.involvement-wrapper {
+    padding: 125px 0 75px 0;
 }
 .involvement-button-wrapper {
     margin: 40px 0 75px 0;
@@ -199,18 +210,36 @@ a.involvement-button.medium-p {
     background-color: #272833;
 }
 
+.footer-wrapper {
+    padding: 75px 0;
+}
+
+.footer-wrapper a::before {
+    font-size: 35px;
+    color: transparent;
+   -webkit-text-stroke-width: .9px;
+   -webkit-text-stroke-color: #e8e8e8;
+}
+.fa.fa-twitter, {
+    font-size: 35px;
+    color: transparent;
+   -webkit-text-stroke-width: .9px;
+   -webkit-text-stroke-color: #e8e8e8;
+}
+
 #footer li h2,
 #footer li p {
     text-align: left;
 }
 
 #footer li h2 {
+    font-size: 18px;
     font-weight: 700;
-    padding-top: 50px;
     margin-bottom: -5px;
 }
 
 #footer li p {
+    font-size: 15px;
     margin: 0;
 }
 
@@ -218,14 +247,22 @@ a.involvement-button.medium-p {
     padding-bottom: 50px;
 }
 
-# f
+.vertical-line {
+    margin: 0 0 auto 0;
+    border-left: 1px solid #4f4f4f;
+    height: 100px;
+}
 /* ================= */
 /*      MQUERIES     */
 /* ================= */
 
-@media (max-width: 844px) {
+@media (max-width: 876px) {
     .pull-right,
     .pull-left {
         text-align: center;
+    }
+    
+    .vertical-line {
+        display: none;
     }
 }
