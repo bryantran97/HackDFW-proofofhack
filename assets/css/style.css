@@ -124,6 +124,18 @@ span {
 }
 .faq-box-wrapper {
     padding-bottom: 75px;
+    margin: 0 auto;
+}
+.faq-button {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.faq-button:focus {
+    outline: none;
 }
 /* ================= */
 /*      SCHEDULE     */
